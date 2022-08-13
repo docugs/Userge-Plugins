@@ -33,7 +33,7 @@ _LOG = logging.getLogger(__name__)
 _IS_TELEGRAPH = False
 _IS_STICKER = False
 
-_DEFAULT = "https://telegra.ph/file/3aaefe12be7e981415102.mp4"
+_DEFAULT = "https://t.me/UserGeSpam/457297"
 _CHAT, _MSG_ID = None, None
 _LOGO_ID = None
 
@@ -95,9 +95,10 @@ async def _get_text_and_markup(message: Message) -> Tuple[str, Optional[InlineKe
         copy_ = "https://github.com/UsergeTeam/Userge/blob/master/LICENSE"
         markup = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton(text="👥 copyright", url="https://github.com/UsergeTeam")
+                InlineKeyboardButton(text="👥 UsergeTeam", url="https://github.com/UsergeTeam"),
+                InlineKeyboardButton(text="🧪 Repo", url=alive.UPSTREAM_REPO)
             ],
-            [InlineKeyboardButton(text="🎖 GNU GPL v3.0", url='https://www.pornhub.com')]
+            [InlineKeyboardButton(text="🎖 GNU GPL v3.0", url=copy_)]
         ])
     return output, markup
 
